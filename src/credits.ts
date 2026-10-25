@@ -46,5 +46,71 @@ export const CREDITS = [
   "artist": "Pinterpandai",
   "lic": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Tegallalang_Rice_Terrace.jpg"
+ },
+ {
+  "title": "The Reserve Garden Villa at Paradisus by Meliá Bali.jpg",
+  "artist": "Paradisus Bali",
+  "lic": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Reserve_Garden_Villa_at_Paradisus_by_Meli%C3%A1_Bali.jpg"
+ },
+ {
+  "title": "Pavilion 2 at the Sanctuary in Ubud, Bali.jpg",
+  "artist": "Escape Nomade",
+  "lic": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pavilion_2_at_the_Sanctuary_in_Ubud,_Bali.jpg"
+ },
+ {
+  "title": "W Hotel Bali room (11267071056).jpg",
+  "artist": "Simon_sees",
+  "lic": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:W_Hotel_Bali_room_(11267071056).jpg"
+ },
+ {
+  "title": "YHI Spa treatment room at Paradisus by Meliá Bali.jpg",
+  "artist": "Paradisus Bali",
+  "lic": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:YHI_Spa_treatment_room_at_Paradisus_by_Meli%C3%A1_Bali.jpg"
+ },
+ {
+  "title": "The Reserve Junior Suite Lagoon Access at Paradisus by Meliá Bali.jpg",
+  "artist": "Paradisus Bali",
+  "lic": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Reserve_Junior_Suite_Lagoon_Access_at_Paradisus_by_Meli%C3%A1_Bali.jpg"
+ },
+ {
+  "title": "Viceroy - panoramio (1).jpg",
+  "artist": "Daria",
+  "lic": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Viceroy_-_panoramio_(1).jpg"
+ },
+ {
+  "title": "The Mansion Ubud Indonesia - panoramio (6).jpg",
+  "artist": "Michelle Maria",
+  "lic": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Mansion_Ubud_Indonesia_-_panoramio_(6).jpg"
+ },
+ {
+  "title": "TonysVilla Bedroom Large.JPG",
+  "artist": "User: (WT-shared) Jpatokal at  wts wikivoyage",
+  "lic": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:TonysVilla_Bedroom_Large.JPG"
+ },
+ {
+  "title": "Viceroy - panoramio.jpg",
+  "artist": "Daria",
+  "lic": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Viceroy_-_panoramio.jpg"
+ },
+ {
+  "title": "Ibis Styles Benoa room (11267203584).jpg",
+  "artist": "Simon_sees",
+  "lic": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ibis_Styles_Benoa_room_(11267203584).jpg"
+ },
+ {
+  "title": "Singature Hotel Bali - room.jpg",
+  "artist": "M",
+  "lic": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Singature_Hotel_Bali_-_room.jpg"
  }
 ] as const;

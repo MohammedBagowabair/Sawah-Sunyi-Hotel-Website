@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowDown, ArrowLeft, ArrowRight, BedDouble, CalendarDays, Home, Menu, Minus, Phone, Plus, X } from 'lucide-react';
-import { COPY, ROOM_IMAGES } from '@/content';
+import { COPY, ROOM_PHOTOS } from '@/content';
+import { RoomGallery } from '@/components/RoomGallery';
 import { CREDITS } from '@/credits';
 import { useCopy } from '@/lib/lang';
 import { PHONE_DISPLAY, TEL, waUrl } from '@/lib/wa';
@@ -218,7 +219,7 @@ function Rooms({ onAsk }: { onAsk: (room: string) => void }) {
       <ul className="room-track" ref={track}>
         {c.rooms.map((r, i) => (
           <li key={r.name} data-i={i} className="room" aria-label={c.roomOf.replace('{n}', String(i + 1)).replace('{t}', String(c.rooms.length))}>
-            <div className="room-img"><Pic name={ROOM_IMAGES[i] ?? 'terrace'} alt={r.alt} sizes="(min-width: 900px) 40vw, 84vw" /></div>
+            <div className="room-img"><RoomGallery photos={ROOM_PHOTOS[i] ?? []} alts={r.alts} label={r.name} note={c.photoNote} photoOf={c.photoOf} sizes="(min-width: 900px) 40vw, 84vw" /></div>
             <h3>{r.name}</h3>
             <p className="room-meta">{r.meta}</p>
             <p>{r.text}</p>

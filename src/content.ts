@@ -11,7 +11,7 @@ export const META: Record<Lang, { title: string; description: string }> = {
   },
 };
 
-export const ROOM_IMAGES = ['terrace', 'fields', 'valley', 'ridge'] as const;
+export const ROOM_PHOTOS: string[][] = [["rm-terrace-1", "rm-terrace-2"], ["rm-subak-1", "rm-subak-2", "rm-subak-3"], ["rm-valley-1", "rm-valley-2", "rm-valley-3"], ["rm-ridge-1", "rm-ridge-2", "rm-ridge-3"]];
 
 export const COPY = {
   en: {
@@ -33,12 +33,12 @@ export const COPY = {
     stayEyebrow: 'Stay', stayTitle: 'Rooms that open to the field',
     swipeHint: 'Swipe to see more', prev: 'Previous room', next: 'Next room', roomOf: 'Room {n} of {t}',
     rooms: [
-      { name: 'Terrace Pavilion', meta: 'King bed · Open-air bath · Up to 2 guests', text: 'A teak pavilion set into the terraces, with a daybed facing the first light over the paddies.', alt: 'Rice fields and thatched huts north of Ubud' },
-      { name: 'Subak Suite', meta: 'King or twin · Garden shower · Up to 3 guests', text: 'Wide sliding screens, a deep garden shower and a veranda right on the water channel.', alt: 'Rice fields and coconut palms in Ubud' },
-      { name: 'Valley Pool Villa', meta: 'Private plunge pool · Up to 2 guests', text: 'Our most private hideaway: a stone pool that drops away to the river valley below.', alt: 'Terraced rice valley at Tegallalang, Bali' },
-      { name: 'Ridge House', meta: 'Two bedrooms · Kitchen · Up to 5 guests', text: 'A family house on the ridge path, with a shared lounge and a kitchen for long stays.', alt: 'Campuhan Ridge path through the grass hills of Ubud' },
+      { name: 'Terrace Pavilion', meta: 'King bed · Open-air bath · Up to 2 guests', text: 'A teak pavilion set into the terraces, with a daybed facing the first light over the paddies.', alts: ["Canopy king bed in a wood-beamed Bali villa with garden doors", "Thatched-roof villa pavilions among tropical grasses"] },
+      { name: 'Subak Suite', meta: 'King or twin · Garden shower · Up to 3 guests', text: 'Wide sliding screens, a deep garden shower and a veranda right on the water channel.', alts: ["Bright suite bedroom with a king bed and garden window", "Twin-curtained bedroom with soft linen and a tropical outlook", "Calm hotel bedroom with a king bed and warm wood headboard"] },
+      { name: 'Valley Pool Villa', meta: 'Private plunge pool · Up to 2 guests', text: 'Our most private hideaway: a stone pool that drops away to the river valley below.', alts: ["Infinity pool and thatched bale overlooking the jungle valley", "Private pool terrace edged by tropical forest", "Four-poster canopy bed in a villa at night"] },
+      { name: 'Ridge House', meta: 'Two bedrooms · Kitchen · Up to 5 guests', text: 'A family house on the ridge path, with a shared lounge and a kitchen for long stays.', alts: ["Villa terrace with a pool at the edge of a green ridge", "Bright bedroom with a double bed and colourful cushions", "Simple bedroom with a king bed and sliding curtains"] },
     ],
-    askRoom: 'Ask about this room',
+    photoNote: 'Illustrative photo', photoOf: 'Photo {n} of {t}', askRoom: 'Ask about this room',
     ritualsEyebrow: 'Rituals', ritualsTitle: 'Days shaped by the village',
     rituals: [
       { t: 'Morning canang', d: 'Fold palm-leaf offerings with the women of the house before breakfast.', img: 'offering', alt: 'Balinese canang sari offerings with flowers' },
@@ -79,12 +79,12 @@ export const COPY = {
     stayEyebrow: 'Menginap', stayTitle: 'Kamar yang terbuka ke sawah',
     swipeHint: 'Geser untuk melihat lainnya', prev: 'Kamar sebelumnya', next: 'Kamar berikutnya', roomOf: 'Kamar {n} dari {t}',
     rooms: [
-      { name: 'Paviliun Teras', meta: 'Ranjang king · Bak mandi terbuka · Maks. 2 tamu', text: 'Paviliun jati yang menyatu dengan terasering, dengan daybed menghadap cahaya pagi pertama di atas sawah.', alt: 'Sawah dan pondok beratap jerami di utara Ubud' },
-      { name: 'Suite Subak', meta: 'King atau twin · Pancuran taman · Maks. 3 tamu', text: 'Pintu geser lebar, pancuran taman yang lapang, dan beranda tepat di tepi saluran air.', alt: 'Sawah dan pohon kelapa di Ubud' },
-      { name: 'Vila Kolam Lembah', meta: 'Kolam pribadi · Maks. 2 tamu', text: 'Tempat paling privat kami: kolam batu yang seolah jatuh ke lembah sungai di bawahnya.', alt: 'Lembah sawah terasering di Tegallalang, Bali' },
-      { name: 'Rumah Bukit', meta: 'Dua kamar tidur · Dapur · Maks. 5 tamu', text: 'Rumah keluarga di jalur bukit, dengan ruang santai bersama dan dapur untuk menginap lebih lama.', alt: 'Jalur Bukit Campuhan melintasi perbukitan rumput di Ubud' },
+      { name: 'Paviliun Teras', meta: 'Ranjang king · Bak mandi terbuka · Maks. 2 tamu', text: 'Paviliun jati yang menyatu dengan terasering, dengan daybed menghadap cahaya pagi pertama di atas sawah.', alts: ["Ranjang king berkelambu di vila Bali berbalok kayu dengan pintu ke taman", "Paviliun vila beratap jerami di antara rerumputan tropis"] },
+      { name: 'Suite Subak', meta: 'King atau twin · Pancuran taman · Maks. 3 tamu', text: 'Pintu geser lebar, pancuran taman yang lapang, dan beranda tepat di tepi saluran air.', alts: ["Kamar suite terang dengan ranjang king dan jendela ke taman", "Kamar bertirai dengan linen lembut dan pemandangan tropis", "Kamar hotel tenang dengan ranjang king dan sandaran kayu hangat"] },
+      { name: 'Vila Kolam Lembah', meta: 'Kolam pribadi · Maks. 2 tamu', text: 'Tempat paling privat kami: kolam batu yang seolah jatuh ke lembah sungai di bawahnya.', alts: ["Kolam infinity dan bale beratap jerami menghadap lembah hutan", "Teras kolam pribadi dikelilingi hutan tropis", "Ranjang berkelambu empat tiang di vila pada malam hari"] },
+      { name: 'Rumah Bukit', meta: 'Dua kamar tidur · Dapur · Maks. 5 tamu', text: 'Rumah keluarga di jalur bukit, dengan ruang santai bersama dan dapur untuk menginap lebih lama.', alts: ["Teras vila dengan kolam di tepi bukit hijau", "Kamar terang dengan ranjang ganda dan bantal berwarna", "Kamar sederhana dengan ranjang king dan tirai geser"] },
     ],
-    askRoom: 'Tanya tentang kamar ini',
+    photoNote: 'Foto ilustrasi', photoOf: 'Foto {n} dari {t}', askRoom: 'Tanya tentang kamar ini',
     ritualsEyebrow: 'Ritual', ritualsTitle: 'Hari-hari yang dibentuk oleh desa',
     rituals: [
       { t: 'Canang pagi', d: 'Merangkai sesajen dari janur bersama ibu-ibu rumah sebelum sarapan.', img: 'offering', alt: 'Sesajen canang sari khas Bali dengan bunga' },
